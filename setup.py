@@ -16,6 +16,7 @@ resource_files = find_all_resource_files(app_package, TethysAppBase.package_name
 resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
 resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
 resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
+resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
 setup(
     name=release_package,
     version='0.0.1',
