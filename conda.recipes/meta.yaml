@@ -13,22 +13,3 @@ about:
 
 outputs:
   - name: {{ name }}
-extra:
-  author_email: gromero@aquaveo.com
-  keywords: []
-  recipe-maintainers:
-  - TethysAppWarehouse
-
-build:
-  noarch: python
-  preserve_egg_dir: true
-  script: python setup.py install --record=record.txt
-requirements:
-  build:
-  - python
-  run:
-  - chx_configuration
-  - py4design
-  - pygithub
-source:
-  path: ..

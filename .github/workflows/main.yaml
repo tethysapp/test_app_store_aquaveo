@@ -3,8 +3,8 @@ name: Publish
 # on: push
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - 'tethysapp_warehouse_release'
 jobs:
   publish:
     runs-on: ubuntu-latest
