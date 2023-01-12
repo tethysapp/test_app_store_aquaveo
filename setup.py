@@ -18,6 +18,7 @@
 (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
 (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
 resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
+resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
 (Pdb) setup(
     name=release_package,
     version='0.0.1',
