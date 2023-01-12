@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 from setuptools import setup, find_namespace_packages
 from setup_helper import find_all_resource_files
 
+=======
+from setuptools import setup, find_namespace_packages2
+from tethys_apps.app_installation import find_all_resource_files
+from tethys_apps.base.app_base import TethysAppBase
+>>>>>>> main
 
 # -- Apps Definition -- #
 
