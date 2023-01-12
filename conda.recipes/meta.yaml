@@ -28,7 +28,6 @@ requirements:
   - python
   run:
   - chx_configuration
-  - py4design
   - pygithub
 source:
   path: ..
