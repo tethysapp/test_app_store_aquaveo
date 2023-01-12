@@ -1,23 +1,20 @@
 from setuptools import setup, find_namespace_packages
-from setup_helper import find_all_resource_files
-
+from tethys_apps.app_installation import find_all_resource_files
+from tethys_apps.base.app_base import TethysAppBase
 
 # -- Apps Definition -- #
 app_package = 'test_app_store_aquaveo'
-tethysapp-app_package = 'test_app_store_aquaveo'
-
+release_package = f'{TethysAppBase.package_namespace}-{app_package}'
 
 # -- Python Dependencies -- #
 dependencies = []
 
 # -- Get Resource File -- #
-resource_files = find_all_resource_files(app_package, tethysapp)
-
+resource_files = find_all_resource_files(app_package, TethysAppBase.package_namespace)
 
 
 setup(
-tethysapp-app_package = 'test_app_store_aquaveo'
-
+    name=release_package,
     version='0.0.1',
     description='This is my testing app for submission and installation',
     long_description='',
