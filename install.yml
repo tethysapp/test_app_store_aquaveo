@@ -1,5 +1,5 @@
 # This file should be committed to your app code.
-version: 1.0.24
+version: 1.0.26
 # This should be greater or equal to your tethys-platform in your environment
 tethys_version: '>=4.0.0'
 # This should match the app - package name in your setup.py
@@ -12,10 +12,8 @@ requirements:
     channels:
       - conda-forge
       - lightsource2-testing
-      - algo4bex
     packages:
       - chx_configuration
-      - py4design
       - pygithub
 
   pip:
