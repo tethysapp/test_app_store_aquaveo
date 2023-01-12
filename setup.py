@@ -1,4 +1,4 @@
-(Pdb) (Pdb) (Pdb) (Pdb) from setuptools import setup, find_namespace_packages
+(Pdb) (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) from setuptools import setup, find_namespace_packages
 (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) from setup_helper import find_resource_files
 (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) from tethys_apps.base.app_base import TethysAppBase
 (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) 
@@ -17,6 +17,7 @@
 (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
 (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
 (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) (Pdb) resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
+resource_files += find_resource_files('tethysapp/' + app_package + '/scripts', 'tethysapp/' +                     app_package)
 (Pdb) setup(
     name=release_package,
     version='0.0.1',
