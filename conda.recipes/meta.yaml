@@ -1,0 +1,34 @@
+{% set data = load_setup_py_data(setup_file='../setup.py', from_recipe_dir=True) %}
+{% set name = data.get('name')|replace("tethysapp-", "")|lower %}
+
+package:
+  name: {{ name }}
+  version: {{ data.get('version') }}
+
+about:
+  author: {{ data.get('author')}}
+  description: {{ data.get('description')}}
+  license: "{'name': 'release_package', 'version': '0.0.1', 'description': 'This is my testing app for submission and installation', 'long_description': '', 'author': 'Aquaveo', 'author_email': 'gromero@aquaveo.com', 'url': '', 'license': 'MIT', 'tethys_version': '>=4.0.0'}"
+  dev_url: {{ data.get('url') }}
+
+outputs:
+  - name: {{ name }}
+extra:
+  author_email: gromero@aquaveo.com
+  keywords: []
+  recipe-maintainers:
+  - TethysAppWarehouse
+
+build:
+  noarch: python
+  preserve_egg_dir: true
+  script: python setup.py install --record=record.txt
+requirements:
+  build:
+  - python
+  run:
+  - chx_configuration
+  - pygithub
+  - locoapp
+source:
+  path: ..
