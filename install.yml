@@ -12,9 +12,11 @@ requirements:
     channels:
       - conda-forge
       - lightsource2-testing
+      - conda-loco
     packages:
       - chx_configuration
       - pygithub
+      - locoapp
 
   pip:
     - cfbuild

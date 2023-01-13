@@ -1,4 +1,4 @@
-from setuptools import setup, find_namespace_packages2
+from setuptools import setup, find_namespace_packages
 from tethys_apps.app_installation import find_all_resource_files
 from tethys_apps.base.app_base import TethysAppBase
 
