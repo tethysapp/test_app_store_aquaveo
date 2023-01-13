@@ -8,7 +8,7 @@ package:
 about:
   author: {{ data.get('author')}}
   description: {{ data.get('description')}}
-  license: "{'name': 'release_package', 'version': '0.0.1', 'description': 'This is my testing app for submission and installation', 'long_description': '', 'author': 'Aquaveo', 'author_email': 'gromero@aquaveo.com', 'url': '', 'license': 'MIT', 'tethys_version': '>=4.0.0'}"
+  license: "{'name': 'release_package', 'version': '0.0.2', 'description': 'This is my testing app for submission and installation', 'long_description': '', 'author': 'Aquaveo', 'author_email': 'gromero@aquaveo.com', 'url': '', 'license': 'MIT', 'tethys_version': '>=4.0.0'}"
   dev_url: {{ data.get('url') }}
 
 outputs:
