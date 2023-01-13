@@ -1,5 +1,5 @@
 # This file should be committed to your app code.
-version: 1.0.34
+version: 1.0.35
 # This should be greater or equal to your tethys-platform in your environment
 tethys_version: '>=4.0.0'
 # This should match the app - package name in your setup.py
@@ -13,8 +13,8 @@ requirements:
       - conda-forge
       # - lightsource2-testing
     packages:
-      # - chx_configuration
-      - pygithub
+      - chx_configuration
+      # - pygithub
 
   pip:
     - cfbuild
