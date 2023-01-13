@@ -16,6 +16,7 @@ dependencies = []
 resource_files = find_all_resource_files(app_package, namespace)
 
 
+#hola comment hey
 
 setup(
     name=release_package,

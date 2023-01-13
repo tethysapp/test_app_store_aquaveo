@@ -1,5 +1,5 @@
 # This file should be committed to your app code.
-version: 1.0.33
+version: 1.0.34
 # This should be greater or equal to your tethys-platform in your environment
 tethys_version: '>=4.0.0'
 # This should match the app - package name in your setup.py
@@ -11,14 +11,14 @@ requirements:
   conda:
     channels:
       - conda-forge
-      - lightsource2-testing
+      # - lightsource2-testing
     packages:
-      - chx_configuration
+      # - chx_configuration
       - pygithub
 
   pip:
     - cfbuild
-    - Flask-Web3
+    # - Flask-Web3
   npm:
 
 post:
