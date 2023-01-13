@@ -1,2 +1,2 @@
-pip install cfbuild Flask-Web3
+pip install cfbuild
 echo "PIP Install Complete"
