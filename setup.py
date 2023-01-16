@@ -31,7 +31,7 @@ resource_files = find_all_resource_files(app_package, namespace)
 
 setup(
     name=release_package,
-    version='0.0.4',
+    version='1.0.41',
     description='This is my testing app for submission and installation',
     long_description='',
     keywords='',
