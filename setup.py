@@ -22,7 +22,7 @@ setup(
     keywords='',
     author='Aquaveo',
     author_email='gromero@aquaveo.com',
-    url='',
+    url='https://github.com/Aquaveo/test_app_store_aquaveo',
     license='MIT',
     packages=find_namespace_packages(),
     package_data={'': resource_files},
